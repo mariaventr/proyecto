@@ -1,0 +1,245 @@
+/* Importa una fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #02b1f4;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Estilo unificado para tarjetas (médico, paciente, medicamento) */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto hover unificado */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos dentro de las tarjetas */
+.card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Información dentro de las tarjetas */
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #02b1f4;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover en los botones */
+.btn:hover {
+    background-color: #0287c3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los campos de fecha */
+input[type="date"] {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 200px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto en los campos de fecha */
+input[type="date"]:focus {
+    border-color: #02b1f4;
+    box-shadow: 0 0 8px rgba(2, 177, 244, 0.5);
+    outline: none;
+}
+
+/* Estilo para el formulario de filtro */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las etiquetas */
+form label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilo del botón de filtro */
+form button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #02b1f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Efecto hover en el botón de filtro */
+form button:hover {
+    background-color: #0287c3;
+    transform: translateY(-2px);
+}
+
+/* Estilo específico para el formulario de búsqueda por matrícula */
+.form-busqueda {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Cambiado para hacerlo más estrecho en pantallas pequeñas */
+    max-width: 400px; /* Ancho máximo reducido para hacerlo más compacto */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 20px; /* Márgenes automáticos para centrar el formulario horizontalmente */
+}
+
+
+.form-busqueda input[type="text"] {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-busqueda input[type="text"]:focus {
+    border-color: #02b1f4;
+    box-shadow: 0 0 8px rgba(2, 177, 244, 0.5);
+    outline: none;
+}
+
+.form-busqueda button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #02b1f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100px;
+}
+
+.form-busqueda button:hover {
+    background-color: #0287c3;
+    transform: translateY(-5px);
+}
+
+    
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+    
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .card h3 {
+        font-size: 19px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    input[type="date"] {
+        width: 90%;
+    }
+
+    form label {
+        font-size: 15px;
+    }
+
+    form button {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    form{
+
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    input[type="date"] {
+        font-size: 15px;
+    }
+
+    
+}

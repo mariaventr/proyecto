@@ -1,0 +1,81 @@
+/* Estilo del menú */
+nav {
+    background: linear-gradient(90deg, #7eb6db, #3570ab);
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    border-radius: 15px;
+    margin: 0 auto; 
+    max-width: 100%; 
+}
+
+/* Ajuste del contenedor del menú */
+nav ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly; 
+    gap: 10px; 
+    overflow-x: auto;
+}
+
+nav ul.menu li {
+    margin: 0;
+}
+
+nav ul.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    text-align: center;
+    white-space: nowrap; 
+}
+
+/* Interacciones */
+nav ul.menu li a:hover,
+nav ul.menu li a:focus {
+    background-color: #003399; /* Color más oscuro al interactuar */
+    transform: scale(1); /* Efecto de zoom */
+    outline: none; /* Remueve bordes por defecto */
+}
+
+nav ul.menu li a:active {
+    background-color: #002a80; /* Color activo */
+    transform: scale(0.95); /* Efecto de presión */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    nav {
+        width: 96%; /* Ocupa todo el ancho en pantallas pequeñas */
+        padding: 10px; /* Reduce el padding general */
+    }
+
+    nav ul.menu {
+        justify-content: start; /* Alineación inicial en móviles */
+        gap: 5px; /* Espaciado reducido */
+    }
+
+    nav ul.menu li a {
+        padding: 10px 15px; /* Ajusta el padding para móviles */
+        font-size: 14px; /* Ajuste de tamaño de fuente */
+    }
+}
+
+/* Estilo extra para pantallas muy pequeñas (ej.: móviles <480px) */
+@media (max-width: 480px) {
+    nav ul.menu {
+        gap: 2px; /* Espaciado más compacto */
+    }
+
+    nav ul.menu li a {
+        font-size: 12px; /* Fuente más pequeña */
+        padding: 8px 10px; /* Proporciones más compactas */
+    }
+}
